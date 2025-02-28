@@ -21,27 +21,25 @@
             background-color: #001f3f;
             color: red;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 600px;
             width: 100%;
             padding: 20px;
+            box-sizing: border-box;
         }
         .image-placeholder {
             width: 100%;
-            height: 500px;
+            height: auto;
             padding-top: 0;
-            background-color: gray;
+            position: relative;
+            aspect-ratio: 1 / 1;
+            background: url('https://media.wired.com/photos/65382632fd3d190c7a1f5c68/1:1/w_1800,h_1800,c_limit/Google-Image-Search-news-Gear-GettyImages-824179306.jpg') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-size: 20px;
-            position: relative;
         }
         .invitation {
             display: flex;
@@ -49,7 +47,9 @@
             justify-content: center;
             gap: 10px;
             margin-top: 20px;
+            margin-left: 0px;
             text-align: center;
+ margin: auto;
         }
         .word {
             padding: 5px;
@@ -75,16 +75,14 @@
             margin-top: 10px;
             font-family: "Tahoma";
             text-align: center;
-            color: yellow;
+            color: orange;
         }
-        @media (max-width: 480px) {
-            .invitation { flex-direction: column; }
-        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="image-placeholder">Your Drawing Here</div>
+        <div class="image-placeholder">!!!!!!!!!!!!!!!!!!!!!</div>
         <div class="invitation">
             <span class="word w1">You</span>
             <span class="word w2">Are</span>
@@ -95,8 +93,8 @@
             <span class="word w7">Birthday</span>
             <span class="word w3">Party!</span>
         </div>
-        <div class="location">📍 Location: Location</div>
-        <div class="time">⏰ tiMe: 23:30</div>
+        <div class="location">Location: Location</div>
+        <div class="time">tiMe: 23:30</div>
     </div>
 </body>
 </html>
